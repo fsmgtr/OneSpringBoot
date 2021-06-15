@@ -1,0 +1,25 @@
+Api -> tem que retornar um Json que é um objeto estruturado.
+O Json pode ser trocado a informação em qualquer linguagem.
+É um modelo padrão de comunicação.
+
+pode ser publicada ou não, pode ter autenticação por Token.
+
+Uma api end point não passa id pela url, ela precisa ser identepende e passar os parametros 
+no corpo da requisição
+
+toda consulta de ajax
+	$.ajax({
+				
+			method: "POST",
+			url: "salvar",
+			data: "" ,
+            contentType: "application/json; charset-utf-8",
+            success: function(response) {
+	        alert("Salvo Com sucesso!");
+            }
+			}).fail(function (xhr, status, errorThrow){
+				alert("erro ao salvar: " + xhr.responsetext);
+				});
+			
+			
+		}
